@@ -93,7 +93,7 @@ body {
 }
 /* auth-nav */
 .contacts-nav .link {
-  color: var(--primary-text-color);
+  color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
