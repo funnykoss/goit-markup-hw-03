@@ -21,16 +21,27 @@ body {
 
 /* ==== COMPONENTS ==== */
 
-.container {
-  width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .list {
   padding: 0px;
   margin: 0px;
   list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .buttons.primary {
@@ -74,7 +85,6 @@ body {
 }
 
 .section-title {
-  margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
 
@@ -98,8 +108,21 @@ body {
 /* ==== END COMPONENTS ==== */
 
 /* ==== HEADER ==== */
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 /* logo */
 .logo {
+  margin-right: 93px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -120,7 +143,20 @@ body {
   color: var(--accent-color);
 }
 /* site-nav */
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -132,8 +168,23 @@ body {
 .site-nav .link.current {
   color: var(--accent-color);
 }
-/* auth-nav */
+
+/* contacts-nav */
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -153,15 +204,12 @@ body {
 /* ==== HERO ==== */
 
 .hero {
-  margin-bottom: 94px;
-
   text-align: center;
 
   background-color: var(--footer-bg-color);
 }
 
 .hero-title {
-  margin-top: 0px;
   margin-bottom: 30px;
 
   font-weight: 900;
@@ -181,11 +229,21 @@ body {
 /* features */
 
 .section-features {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features {
+  display: flex;
+}
+.features-items {
+  width: 270px;
+}
+.features-items:not(:last-child) {
+  margin-right: 30px;
 }
 
 .features-title {
-  margin-top: 0px;
   margin-bottom: 10px;
 
   font-weight: 700;
@@ -194,9 +252,6 @@ body {
   text-transform: uppercase;
 }
 .features-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
   line-height: 1.71;
   letter-spacing: 0.03em;
 
@@ -206,8 +261,15 @@ body {
 /* ==== EXAMPLES ==== */
 
 .section-examples {
-  margin-bottom: 94px;
-  background-color: tomato;
+  padding-bottom: 94px;
+}
+
+.examples {
+  display: flex;
+}
+
+.examples-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* ==== END EXAMPLES ==== */
@@ -221,18 +283,43 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.team {
+  display: flex;
+}
+
+.team-item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--background-color);
+  width: 270px;
+  height: 368px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .team-text {
+  margin-bottom: 30px;
+
   font-size: 16px;
-  line-height: 1.187px;
+  line-height: 1.187;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--title-text-color);
+}
+.team-img {
+  display: block;
+  margin-bottom: 30px;
 }
 
 /* ==== END ABOUT ==== */
@@ -293,19 +380,45 @@ body {
 /* ====  FILTERS ==== */
 
 .section-filters {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
-
+.filters-items:not(:last-child) {
+  margin-right: 8px;
+}
 /* ====  END FILTERS ==== */
 
 /* ==== PROJECTS ==== */
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects-items {
+  background-color: var(--background-color);
+  width: 370px;
+  height: 404px;
+}
+
+.projects-items:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects-items:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.card-title {
+  padding: 20px 24px;
+}
 
 .projects .link {
   text-decoration: none;
 }
 .project-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -315,9 +428,6 @@ body {
   color: var(--primary-text-color);
 }
 .projects-text {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
