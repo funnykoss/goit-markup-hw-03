@@ -280,12 +280,16 @@ img {
 
 .examples {
   display: flex;
-  margin: -15px;
+  /* margin: -15px; */
 }
 
-.examples-item {
-  margin: 15px;
+.examples-item:not(:last-child) {
+  margin-right: 30px;
 }
+
+/* .examples-item {
+  margin: 15px;
+} */
 
 /* ==== END EXAMPLES ==== */
 
@@ -300,11 +304,11 @@ img {
 
 .team {
   display: flex;
-  margin: -15px;
+  /* margin: -15px; */
 }
 
 .team-item {
-  margin: 15px;
+  /* margin: 15px; */
   border-radius: 0px 0px 4px 4px;
   background-color: var(--background-color);
   width: 270px;
@@ -313,9 +317,13 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* .team-item:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
-} */
+}
+
+.card-description {
+  padding: 30px 55px;
+}
 
 .team-title {
   margin-bottom: 10px;
@@ -327,8 +335,6 @@ img {
   text-align: center;
 }
 .team-text {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
@@ -338,7 +344,6 @@ img {
 }
 .team-img {
   display: block;
-  margin-bottom: 30px;
 }
 
 /* ==== END ABOUT ==== */
@@ -417,20 +422,20 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  /* margin: -15px; */
 }
 
-.projects-items {
+/* .projects-items {
   margin: 15px;
-}
+} */
 
-/* .projects-items:not(:nth-child(3n)) {
+.projects-items:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
 .projects-items:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
-} */
+}
 
 .card-title {
   padding: 20px 24px;
