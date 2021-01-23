@@ -280,16 +280,11 @@ img {
 
 .examples {
   display: flex;
-  /* margin: -15px; */
 }
 
 .examples-item:not(:last-child) {
   margin-right: 30px;
 }
-
-/* .examples-item {
-  margin: 15px;
-} */
 
 /* ==== END EXAMPLES ==== */
 
@@ -322,7 +317,7 @@ img {
 }
 
 .card-description {
-  padding: 30px 55px;
+  padding: 30px 32px;
 }
 
 .team-title {
@@ -422,12 +417,11 @@ img {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  /* margin: -15px; */
 }
 
-/* .projects-items {
-  margin: 15px;
-} */
+.projects-items {
+  width: calc((100% - 60px) / 3);
+}
 
 .projects-items:not(:nth-child(3n)) {
   margin-right: 30px;
