@@ -90,12 +90,12 @@ img {
 
 .filters-items .filter-all {
   background-color: var(--accent-color);
-  color: var(--primary-text-color);
+  color: var(--main-bg-color);
 }
 
 .filters-items .filter-all:first-child:hover,
 .filters-items .filter-all:first-child:focus {
-  background-color: var(--background-color);
+  background-color: var(--main-bg-color);
   color: var(--primary-text-color);
 }
 
